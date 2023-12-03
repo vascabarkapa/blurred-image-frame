@@ -85,8 +85,22 @@ image.
 
 ```javascript
 <input type="file" onchange="fillImageWithBlur(event, 'yourCanvasId')">
-<canvas hidden id="yourCanvasId" width="500" height="500"></canvas>
+<canvas hidden id="yourCanvasId" width="1024" height="576"></canvas>
 ```
+
+The following example shows the `fillImageWithBlur` function using two images to demonstrate the transformation before and after applying the function.
+
+### Before
+
+<img src="https://raw.githubusercontent.com/vascabarkapa/blurred-image-frame/main/example/images/football_women.jpg" alt="Original Image" width="250px">
+
+*Original image before applying any modifications.*
+
+### After
+
+<img src="https://raw.githubusercontent.com/vascabarkapa/blurred-image-frame/main/example/images/football_women_blurred.jpg" alt="Originala Image" width="500px">
+
+*Image after applying the `fillImageWithBlur` function to fit a specific canvas size without cropping.*
 
 Feel free to tailor the HTML elements and canvas dimensions in accordance with the specific requirements of your
 project. Furthermore, you are encouraged to formally customize the styling, integrate supplementary features, or make
