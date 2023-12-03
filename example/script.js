@@ -1,5 +1,3 @@
-document.getElementById('imageInput').addEventListener('change', handleImage);
-
 function handleImage(e) {
     const canvas = document.getElementById('outputCanvas');
     const ctx = canvas.getContext('2d');
@@ -33,18 +31,6 @@ function handleImage(e) {
         ctx.drawImage(image, xOffset, yOffset, newWidth, newHeight);
     };
 }
-
-document.getElementById('downloadButton').addEventListener('click', function () {
-    const canvas = document.getElementById('outputCanvas');
-    const downloadLink = document.createElement('a');
-
-    downloadLink.href = canvas.toDataURL('image/png');
-    downloadLink.download = 'resized_image.png';
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-
-    document.body.removeChild(downloadLink);
-});
 
 function downloadImage() {
     const canvas = document.getElementById('outputCanvas');
