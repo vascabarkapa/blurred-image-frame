@@ -8,25 +8,26 @@ blur to the edges of the image, ensuring it seamlessly fits the desired dimensio
 
 ```javascript
 function fillImageWithBlur(e, canvasId) {
-    // Retrieve the canvas and its 2D rendering context
+    // Get the canvas and its 2D rendering context
     const canvas = document.getElementById(canvasId);
     const ctx = canvas.getContext('2d');
 
     // Create a link element for downloading the blurred image
     const downloadLink = document.createElement('a');
 
-    // Create an image element and set its source to the selected file
+    // Create a new image object
     const image = new Image();
+    // Set the source of the image to the selected file
     image.src = URL.createObjectURL(e.target.files[0]);
 
-    // Execute when the image is fully loaded
+    // Event handler for when the image is loaded
     image.onload = function () {
-        // Calculate dimensions and offsets for proper rendering
+        // Calculate aspect ratios for the canvas and the loaded image
         const aspectRatio = canvas.width / canvas.height;
         const imageAspectRatio = image.width / image.height;
-        let newWidth, newHeight;
 
-        // Adjust dimensions based on aspect ratios
+        // Calculate new width and height for the image to fit within the canvas while maintaining aspect ratio
+        let newWidth, newHeight;
         if (imageAspectRatio > aspectRatio) {
             newWidth = canvas.width;
             newHeight = canvas.width / imageAspectRatio;
@@ -35,26 +36,30 @@ function fillImageWithBlur(e, canvasId) {
             newHeight = canvas.height;
         }
 
+        // Calculate offsets to center the image within the canvas
         const xOffset = (canvas.width - newWidth) / 2;
         const yOffset = (canvas.height - newHeight) / 2;
 
-        // Clear the canvas and apply blur effect
+        // Clear the canvas
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Apply a blur filter to the context and draw the image with a margin
         ctx.filter = 'blur(50px)';
         ctx.drawImage(image, -100, -100, canvas.width + 200, canvas.height + 200);
 
-        // Reset filter and draw the image in its final position
+        // Reset the filter and draw the image at the calculated position and size
         ctx.filter = 'none';
         ctx.drawImage(image, xOffset, yOffset, newWidth, newHeight);
 
-        // Prepare the blurred image for download
+        // Extract original file extension and filename without extension
         const originalExtension = e.target.files[0].name.split('.').pop();
         const fileNameWithoutExtension = e.target.files[0].name.replace(/\.[^/.]+$/, '');
 
+        // Set the download link attributes to download the blurred image
         downloadLink.href = canvas.toDataURL(`image/${originalExtension}`);
         downloadLink.download = `${fileNameWithoutExtension}_blurred.${originalExtension}`;
 
-        // Trigger download link and remove it from the DOM
+        // Append the download link to the body, trigger a click, and remove it
         document.body.appendChild(downloadLink);
         downloadLink.click();
         document.body.removeChild(downloadLink);
@@ -80,7 +85,9 @@ processing, apply the blur effect, and enable the download of the seamlessly fit
 <canvas hidden id="yourCanvasId" width="500" height="500"></canvas>
 ```
 
-Feel free to adjust the HTML elements and canvas dimensions according to your specific project requirements.
+Feel free to tailor the HTML elements and canvas dimensions in accordance with the specific requirements of your
+project. Furthermore, you are encouraged to formally customize the styling, integrate supplementary features, or make
+any necessary adjustments to align with the distinctive needs and objectives of your project.
 
 ## License
 
