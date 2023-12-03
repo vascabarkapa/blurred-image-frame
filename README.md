@@ -1,6 +1,8 @@
 # Blurred Image Frame
 
-This repository houses a user-friendly JavaScript function named `fillImageWithBlur`. The purpose of this function is to assist users who want to avoid cropping an image to fit a specific canvas size. Instead, it dynamically adds a subtle blur to the edges of the image, ensuring it seamlessly fits the desired dimensions without sacrificing content.
+This repository houses a user-friendly JavaScript function named `fillImageWithBlur`. The purpose of this function is to
+assist users who want to avoid cropping an image to fit a specific canvas size. Instead, it dynamically adds a subtle
+blur to the edges of the image, ensuring it seamlessly fits the desired dimensions without sacrificing content.
 
 ## Function Overview
 
@@ -60,13 +62,18 @@ function fillImageWithBlur(e, canvasId) {
 }
 ```
 
-## Function Overview
+## How It Helps
 
-This function simplifies the process for users who wish to maintain the entirety of their images without resorting to cropping. By intelligently incorporating a subtle blur effect around the edges, the resulting image seamlessly fits the desired canvas dimensions, providing an aesthetically pleasing solution. The user can easily integrate this functionality into their projects to achieve a harmonious balance between image size and content preservation.
+This function simplifies the process for users who wish to maintain the entirety of their images without resorting to
+cropping. By intelligently incorporating a subtle blur effect around the edges, the resulting image seamlessly fits the
+desired canvas dimensions, providing an aesthetically pleasing solution. The user can easily integrate this
+functionality into their projects to achieve a harmonious balance between image size and content preservation.
 
 ## Usage
 
-To utilize this function, integrate the provided JavaScript code into your project. Call the `fillImageWithBlur` function by passing an event object `e` and the ID of the canvas element `canvasId`. The function will handle the image processing, apply the blur effect, and enable the download of the seamlessly fitted image.
+To utilize this function, integrate the provided JavaScript code into your project. Call the `fillImageWithBlur`
+function by passing an event object `e` and the ID of the canvas element `canvasId`. The function will handle the image
+processing, apply the blur effect, and enable the download of the seamlessly fitted image.
 
 ```javascript
 <input type="file" onchange="fillImageWithBlur(event, 'yourCanvasId')">
