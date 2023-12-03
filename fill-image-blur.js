@@ -32,12 +32,13 @@ function fillImageWithBlur(e, canvasId) {
         ctx.drawImage(image, xOffset, yOffset, newWidth, newHeight);
 
         const originalExtension = e.target.files[0].name.split('.').pop();
+        const fileNameWithoutExtension = e.target.files[0].name.replace(/\.[^/.]+$/, '');
+
         downloadLink.href = canvas.toDataURL(`image/${originalExtension}`);
-        downloadLink.download = `${e.target.files[0].name.split('.').slice(0, -1).join('.')}_blurred.${originalExtension}`;
+        downloadLink.download = `${fileNameWithoutExtension}_blurred.${originalExtension}`;
 
         document.body.appendChild(downloadLink);
         downloadLink.click();
-
         document.body.removeChild(downloadLink);
     };
 }
