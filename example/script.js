@@ -24,9 +24,9 @@ function handleImage(e) {
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        ctx.filter = 'blur(50px)'; // You can adjust the blur amount
+        ctx.filter = 'blur(50px)';
         ctx.drawImage(image, -100, -100, canvas.width + 200, canvas.height + 200);
-        ctx.filter = 'none'; // Reset the filter for future drawings
+        ctx.filter = 'none';
 
         ctx.drawImage(image, xOffset, yOffset, newWidth, newHeight);
     };
