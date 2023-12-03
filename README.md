@@ -77,7 +77,7 @@ processing, apply the blur effect, and enable the download of the seamlessly fit
 
 ```javascript
 <input type="file" onchange="fillImageWithBlur(event, 'yourCanvasId')">
-<canvas id="yourCanvasId" width="500" height="500"></canvas>
+<canvas hidden id="yourCanvasId" width="500" height="500"></canvas>
 ```
 
 Feel free to adjust the HTML elements and canvas dimensions according to your specific project requirements.
