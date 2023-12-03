@@ -10,8 +10,8 @@
 <body>
 <div>
     <p>Add a image</p>
-    <input type="file" id="imageInput" accept="image/*" onchange="handleImage(event)">
-    <button id="downloadButton" onclick="downloadImage()">Download image</button>
+    <input type="file" id="imageInput" accept="image/*" onchange="handleImage(event, 'outputCanvas')">
+    <button id="downloadButton" onclick="downloadImage('outputCanvas')">Download image</button>
 </div>
 <canvas id="outputCanvas" width="1024" height="576"></canvas>
 </body>
