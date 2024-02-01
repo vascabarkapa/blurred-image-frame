@@ -12,6 +12,9 @@ function handleImage(e, canvasId) {
         const aspectRatio = canvas.width / canvas.height;
         const imageAspectRatio = image.width / image.height;
 
+        const downloadButton = document.getElementById('downloadButton');
+        downloadButton.disabled = false;
+
         let newWidth, newHeight;
 
         if (imageAspectRatio > aspectRatio) {

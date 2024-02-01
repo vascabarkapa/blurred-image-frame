@@ -36,6 +36,10 @@ button:hover {
     background-color: #45a049;
 }
 
+button:disabled {
+    background-color: grey;
+}
+
 canvas {
     margin: 0 auto;
     border: 1px solid #000000;
