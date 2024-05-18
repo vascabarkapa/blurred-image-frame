@@ -1,7 +1,7 @@
 {
   "name": "blurred-image-frame",
-  "version": "1.0.0",
-  "description": "A function that automatically adds a blur section to no-crop images",
+  "version": "1.0.1",
+  "description": "Avoid cropping an image to fit a specific canvas size.",
   "main": "index.js",
   "directories": {
     "example": "example"
