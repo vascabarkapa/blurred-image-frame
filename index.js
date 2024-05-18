@@ -42,3 +42,5 @@ function fillImageWithBlur(e, canvasId) {
         document.body.removeChild(downloadLink);
     };
 }
+
+module.export = fillImageWithBlur
