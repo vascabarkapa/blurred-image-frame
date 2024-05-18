@@ -77,8 +77,7 @@ functionality into their projects to achieve a harmonious balance between image 
 ## Usage
 
 To utilize this function, it is essential to first import
-the [fill-image-blur.js](https://github.com/vascabarkapa/blurred-image-frame/blob/main/fill-image-blur.js) JavaScript
-file into your project. After importing, integrate the provided JavaScript code into your project. Call
+the [fill-image-blur](https://github.com/vascabarkapa/blurred-image-frame/blob/main/index.js) into your project. After importing, integrate the provided JavaScript code into your project. Call
 the `fillImageWithBlur` function by passing an event object `e` and the ID of the canvas element, `canvasId`. The
 function will take care of image processing, apply the blur effect, and facilitate the download of the seamlessly fitted
 image.
