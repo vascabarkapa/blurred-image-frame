@@ -67,6 +67,9 @@ function fillImageWithBlur(e, canvasId) {
 }
 ```
 
+## Live Demo
+Check out how application looks live! You can test all the functionalities [**here**](https://resize-image-blur.netlify.app/).
+
 ## How It Helps
 
 This function simplifies the process for users who wish to maintain the entirety of their images without resorting to
