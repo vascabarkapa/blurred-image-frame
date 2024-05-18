@@ -4,6 +4,9 @@ This repository houses a user-friendly JavaScript function named `fillImageWithB
 assist users who want to avoid cropping an image to fit a specific canvas size. Instead, it dynamically adds a subtle
 blur to the edges of the image, ensuring it seamlessly fits the desired dimensions without sacrificing content.
 
+## Live Demo
+Check out how application looks live! You can test all the functionalities [**HERE**](https://resize-image-blur.netlify.app/).
+
 ## Function Overview
 
 ```javascript
@@ -66,9 +69,6 @@ function fillImageWithBlur(e, canvasId) {
     };
 }
 ```
-
-## Live Demo
-Check out how application looks live! You can test all the functionalities [**here**](https://resize-image-blur.netlify.app/).
 
 ## How It Helps
 
