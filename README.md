@@ -94,13 +94,13 @@ The following example shows the `fillImageWithBlur` function using two images to
 
 ### Before
 
-<img src="https://raw.githubusercontent.com/vascabarkapa/blurred-image-frame/main/example/images/football_women.jpg" alt="Original Image" width="250px">
+<img src="https://i.ibb.co/ZhtZtDS/football-women.jpg" alt="Original Image" width="250px">
 
 *Original image before applying any modifications.*
 
 ### After
 
-<img src="https://raw.githubusercontent.com/vascabarkapa/blurred-image-frame/main/example/images/football_women_blurred.jpg" alt="Originala Image" width="500px">
+<img src="https://i.ibb.co/XWDSqkV/football-women-blurred.png" alt="No crop Image" width="500px">
 
 *Image after applying the `fillImageWithBlur` function to fit a specific canvas size without cropping.*
 
