@@ -1,6 +1,6 @@
 {
   "name": "blurred-image-frame",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Avoid cropping an image to fit a specific canvas size.",
   "main": "index.js",
   "directories": {
