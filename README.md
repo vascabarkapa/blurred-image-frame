@@ -7,6 +7,27 @@ blur to the edges of the image, ensuring it seamlessly fits the desired dimensio
 ## Demo
 Check out how the functionality works! ==> [**DEMO**](https://resize-image-blur.netlify.app/).
 
+## Installation
+Install `blurred-image-frame` with npm:
+```bash
+npm install blurred-image-frame
+```
+
+## Usage
+
+To utilize this function, it is essential to first import
+the [fill-image-blur](https://github.com/vascabarkapa/blurred-image-frame/blob/main/index.js) into your project. After importing, integrate the provided JavaScript code into your project. Call
+the `fillImageWithBlur` function by passing an event object `e` and the ID of the canvas element, `canvasId`. The
+function will take care of image processing, apply the blur effect, and facilitate the download of the seamlessly fitted
+image.
+
+```javascript
+<input type="file" onchange="fillImageWithBlur(event, 'yourCanvasId')">
+<canvas hidden id="yourCanvasId" width="1024" height="576"></canvas>
+```
+
+The following example shows the `fillImageWithBlur` function using two images to demonstrate the transformation before and after applying the function.
+
 ## Function Overview
 
 ```javascript
@@ -76,21 +97,6 @@ This function simplifies the process for users who wish to maintain the entirety
 cropping. By intelligently incorporating a subtle blur effect around the edges, the resulting image seamlessly fits the
 desired canvas dimensions, providing an aesthetically pleasing solution. The user can easily integrate this
 functionality into their projects to achieve a harmonious balance between image size and content preservation.
-
-## Usage
-
-To utilize this function, it is essential to first import
-the [fill-image-blur](https://github.com/vascabarkapa/blurred-image-frame/blob/main/index.js) into your project. After importing, integrate the provided JavaScript code into your project. Call
-the `fillImageWithBlur` function by passing an event object `e` and the ID of the canvas element, `canvasId`. The
-function will take care of image processing, apply the blur effect, and facilitate the download of the seamlessly fitted
-image.
-
-```javascript
-<input type="file" onchange="fillImageWithBlur(event, 'yourCanvasId')">
-<canvas hidden id="yourCanvasId" width="1024" height="576"></canvas>
-```
-
-The following example shows the `fillImageWithBlur` function using two images to demonstrate the transformation before and after applying the function.
 
 ### Before
 
