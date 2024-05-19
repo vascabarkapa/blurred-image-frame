@@ -5,7 +5,7 @@ assist users who want to avoid cropping an image to fit a specific canvas size. 
 blur to the edges of the image, ensuring it seamlessly fits the desired dimensions without sacrificing content.
 
 ## Demo
-Check out how the functionality works! ==> [**DEMO**](https://resize-image-blur.netlify.app/).
+Check out how the functionality works! ==> [**DEMO**](https://blurred-image-frame.netlify.app/).
 
 ## Installation
 Install `blurred-image-frame` with npm:
