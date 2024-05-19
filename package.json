@@ -1,6 +1,6 @@
 {
   "name": "blurred-image-frame",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Avoid cropping an image to fit a specific canvas size.",
   "main": "index.js",
   "directories": {
@@ -14,10 +14,25 @@
     "url": "git+https://github.com/vascabarkapa/blurred-image-frame.git"
   },
   "keywords": [
-    "blurred",
+    "aspect ratio",
+    "blur",
+    "blur effect",
+    "blurred image",
+    "blurred image frame",
+    "download",
+    "frame",
     "image",
-    "frame"
-  ],
+    "image enhancement",
+    "image export",
+    "image fitting",
+    "image processing",
+    "image quality",
+    "image resizing",
+    "motion blur",
+    "photo blur",
+    "resize",
+    "resizing"
+  ],  
   "author": "Vasilije Čabarkapa",
   "license": "MIT",
   "bugs": {
